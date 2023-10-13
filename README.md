@@ -1,6 +1,6 @@
 
 
-This is the official code for TMLR paper, **"Dual Cognitive Architecture: Incorporating Biases and Multi-Memory Systems for Lifelong Learning"** by Shruthi Gowda, Elahe Arani and Bahram Zonooz.
+This is the official code for TMLR paper, **"[Dual Cognitive Architecture: Incorporating Biases and Multi-Memory Systems for Lifelong Learning](https://openreview.net/forum?id=PEyVq0hlO3)"** by Shruthi Gowda, Elahe Arani and Bahram Zonooz.
 
 ## Methodology
 
