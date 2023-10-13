@@ -2,11 +2,6 @@
 
 This is the official code for TMLR paper, **"Dual Cognitive Architecture: Incorporating Biases and Multi-Memory Systems for Lifelong Learning"** by Shruthi Gowda, Elahe Arani and Bahram Zonooz.
 
-## Requirements
-- python==3.8.0
-- torch==1.10.0
-- torchvision==0.8.0 
-
 ## Methodology
 
 #### DUCA framework
@@ -21,6 +16,12 @@ Dual Cognitive Architecture (DUCA) : The explicit module features a working mode
 
 We introduce a new dataset *DN4IL* for the Domain-IL setting.
 More details are provided here : https://github.com/NeurAI-Lab/DN4IL-dataset
+
+
+## Requirements
+- python==3.8.0
+- torch==1.10.0
+- torchvision==0.8.0 
 
 ## Setup
 
