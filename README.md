@@ -1,6 +1,6 @@
 
 
-This is the official code for TMLR paper, "Dual Cognitive Architecture: Incorporating Biases and Multi-Memory Systems for Lifelong Learning" by Shruthi Gowda, Elahe Arani and Bahram Zonooz.
+This is the official code for TMLR paper, **"Dual Cognitive Architecture: Incorporating Biases and Multi-Memory Systems for Lifelong Learning"** by Shruthi Gowda, Elahe Arani and Bahram Zonooz.
 
 ## Requirements
 - python==3.8.0
@@ -11,15 +11,15 @@ This is the official code for TMLR paper, "Dual Cognitive Architecture: Incorpor
 
 ####DUCA framework
 
-'Dual Cognitive Architecture (DUCA)' : The explicit module features a working model that is dedicated to learning direct sensory data. In the implicit module, the inductive bias learner encodes prior shape-related knowledge, while the semantic memory submodule consolidates information originating from the explicit module. During the inference process, a single network, specifically the semantic memory, is employed, as it contains consolidated knowledge encompassing all tasks.
+Dual Cognitive Architecture (DUCA) : The explicit module features a working model that is dedicated to learning direct sensory data. In the implicit module, the inductive bias learner encodes prior shape-related knowledge, while the semantic memory submodule consolidates information originating from the explicit module. During the inference process, a single network, specifically the semantic memory, is employed, as it contains consolidated knowledge encompassing all tasks.
 
 [//]: # (![image info]&#40;./src/DUCA.png&#41;)
 
 <img src="./src/DUCA.png"  width="512" height="360">
 
-## New Dataset - "Dn4IL"
+## New Dataset - "DN4IL"
 
-We introduce a new dataset for the Domain-IL setting. It is a subset of the standard DomainNet dataset used in domain adaptation. It consists of six different domains: real, clipart, infograph, painting, quickdraw, and sketch. The shift in distribution between domains is challenging. A few examples can be seen in Figure 
+We introduce a new dataset *DN4IL* for the Domain-IL setting. It is a subset of the standard DomainNet dataset used in domain adaptation. It consists of six different domains: real, clipart, infograph, painting, quickdraw, and sketch. The shift in distribution between domains is challenging. A few examples and statistics of the dataset can be seen below. 
 
 <img src="./src/visual.png"  width="512" height="340">
 
@@ -27,6 +27,7 @@ Details on supercategory and classes in DN4IL dataset.
 ![image info](./src/dn4il.png)
 ![image info](./src/dn4il_samp.png)
 
+####DN4IL Access
 
 ## Setup
 
@@ -37,11 +38,10 @@ size to 32, and epochs to 50 respectively for all the datasets. The decay factor
 
 ## Running
 
-####Train InBiaseD
+####Train DUCA - DN4IL 
 ```
 best_params_dn4il = {
     200: {'lr': 0.05,
-          'minibatch_size': 32,
           'batch_size': 32,
           'n_epochs': 50,
           'aux': 'shape',
@@ -53,7 +53,6 @@ best_params_dn4il = {
           'r': 0.06
           },
     500: {'lr': 0.05,
-          'minibatch_size': 32,
           'batch_size': 32,
           'n_epochs': 50,
           'aux': 'shape',
@@ -78,7 +77,6 @@ python main.py
     --buffer_size {buffer_size} \
     --aux {train_params['aux']} \
     --lr {train_params['lr']} \
-    --minibatch_size {train_params['minibatch_size']} \
     --n_epochs {train_params['n_epochs']} \
     --img_size {train_params['img_size']} \
     --shape_filter {train_params['shape_filter']} \
