@@ -10,7 +10,7 @@ Dual Cognitive Architecture (DUCA) : The explicit module features a working mode
 
 [//]: # (![image info]&#40;./src/DUCA.png&#41;)
 
-<img src="./src/DUCA.png"  width="512" height="360">
+<img src="./src/DUCA.png"  width="656" height="550">
 
 ## New Dataset - "DN4IL"
 
