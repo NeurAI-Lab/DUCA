@@ -9,7 +9,7 @@ This is the official code for TMLR paper, **"Dual Cognitive Architecture: Incorp
 
 ## Methodology
 
-####DUCA framework
+#### DUCA framework
 
 Dual Cognitive Architecture (DUCA) : The explicit module features a working model that is dedicated to learning direct sensory data. In the implicit module, the inductive bias learner encodes prior shape-related knowledge, while the semantic memory submodule consolidates information originating from the explicit module. During the inference process, a single network, specifically the semantic memory, is employed, as it contains consolidated knowledge encompassing all tasks.
 
@@ -27,7 +27,7 @@ Details on supercategory and classes in DN4IL dataset.
 ![image info](./src/dn4il.png)
 ![image info](./src/dn4il_samp.png)
 
-####DN4IL Access
+#### DN4IL Access
 
 ## Setup
 
@@ -38,7 +38,7 @@ size to 32, and epochs to 50 respectively for all the datasets. The decay factor
 
 ## Running
 
-####Train DUCA - DN4IL 
+#### Train DUCA - DN4IL 
 ```
 best_params_dn4il = {
     200: {'lr': 0.05,
@@ -89,7 +89,7 @@ python main.py
     --csv_log \
 ```
 
-##Cite Our Work
+## Cite Our Work
 
 ## License
 
