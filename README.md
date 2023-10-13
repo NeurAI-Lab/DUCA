@@ -19,22 +19,16 @@ Dual Cognitive Architecture (DUCA) : The explicit module features a working mode
 
 ## New Dataset - "DN4IL"
 
-We introduce a new dataset *DN4IL* for the Domain-IL setting. It is a subset of the standard DomainNet dataset used in domain adaptation. It consists of six different domains: real, clipart, infograph, painting, quickdraw, and sketch. The shift in distribution between domains is challenging. A few examples and statistics of the dataset can be seen below. 
-
-<img src="./src/visual.png"  width="512" height="340">
-
-Details on supercategory and classes in DN4IL dataset.
-![image info](./src/dn4il.png)
-![image info](./src/dn4il_samp.png)
-
-#### DN4IL Access
+We introduce a new dataset *DN4IL* for the Domain-IL setting.
+More details are provided here : https://github.com/NeurAI-Lab/DN4IL-dataset
 
 ## Setup
 
 DUCA is trained and tested on four different datasets using ResNet18 architecture. The learning rate is set to 0.03, batch
 size to 32, and epochs to 50 respectively for all the datasets. The decay factor d is always set to 0.999.
 
-![image info](./src/hyper.png)
+[//]: # (![image info]&#40;./src/hyper.png&#41;)
+<img src="./src/hyper.png"  width="650" height="125">
 
 ## Running
 
