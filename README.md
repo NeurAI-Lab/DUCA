@@ -86,6 +86,16 @@ python main.py
 
 ## Cite Our Work
 
+    @article{
+      gowda2023dual,
+      title={Dual Cognitive Architecture: Incorporating Biases and Multi-Memory Systems for Lifelong Learning},
+      author={Shruthi Gowda and Bahram Zonooz and Elahe Arani},
+      journal={Transactions on Machine Learning Research},
+      issn={2835-8856},
+      year={2023},
+      url={https://openreview.net/forum?id=PEyVq0hlO3}
+    }
+
 ## License
 
 This project is licensed under the terms of the MIT license.
